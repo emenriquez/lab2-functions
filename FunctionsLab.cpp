@@ -1,8 +1,14 @@
 #include <iostream> // Used for cin and cout
+#include <string>
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 using namespace std; // making life easier so that we do not need to use std::cin , std::cout, etc.
 
+
+// Write in the name of your group members
+// if you are not working with a partner, assign partner 2 with name "Emilio Estevez"
+string partner1 = "";
+string partner2 = "";
 
 
 //Write the function called locateSmallest in the given interval such that 
@@ -53,6 +59,9 @@ int sumOdds(int array[], int start, int end){
 
 
 TEST_CASE("function tests", "[tests]") {
+	REQUIRE(partner1 != "");
+	REQUIRE(partner2 != "");
+
 	int myarray[] = { 16,3,77,40,20,40,44,52,40,90 };
 	int target = 40;
 
