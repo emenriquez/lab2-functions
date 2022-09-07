@@ -7,3 +7,5 @@
 `make test`
 
 you can also write some code to try out your functions in `demo.cpp`. To run this code, use the command `make demo`.
+
+To test a single function, you can use the command `make test try={functionName}` for example, if you want to test the printArray() function, you will run `make test try=printArray`

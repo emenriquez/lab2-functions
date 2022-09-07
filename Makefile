@@ -4,7 +4,7 @@ a.out: tests.cpp FunctionsLab.cpp
 	g++ -std=c++11 tests.cpp
 
 test: a.out
-	./a.out
+	./a.out "$(try)"
 
 clean:
 	rm -f a.out
